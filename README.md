@@ -1,5 +1,5 @@
-# UV-Monitor
-Track UV index to achieve your ultimate skin tone
+# Home Cooked
+An intuitive way to find and store food and drink recipes by keyword searches.
 
 ## User Story
 
