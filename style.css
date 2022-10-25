@@ -1,0 +1,50 @@
+#search {
+  display: flex;
+  color: aqua;
+  flex-direction: column;
+  align-items: center;
+  border: solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.title {
+  align-self: center;
+}
+.favoritesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.drinks {
+  width: 400px;
+  height: 400px;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20191031-mojitos-three-ways-delish-ehg-2887-1584029660.jpg?crop=0.540xw:0.810xh;0.232xw,0.0745xh&resize=640:*);
+}
+.snacks {
+  width: 400px;
+  height: 400px;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url(https://assets.sweat.com/html_body_blocks/images/000/013/890/original/EasyHealthySnacks_en65ab5213130c9862172ac11435f055d9_en38b28edc7b2830a46f6e00bfeceeb1b6.jpg?1596090039);
+}
+.entrees {
+  width: 400px;
+  height: 400px;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url(https://iamafoodblog.b-cdn.net/wp-content/uploads/2021/02/how-to-cook-steak-1061w.jpg);
+}

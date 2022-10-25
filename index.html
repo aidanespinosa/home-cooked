@@ -5,56 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title> Recipes Based on What I Have </title>
+    <title>Recipes Based on What I Have</title>
   </head>
 
   <body>
     <header>
       <section id="search">
-        <h2 class="">What do I have?</h2>
+        <h2 class="title">What do I have?</h2>
         <form>
           <div>
-              <label class="search-bar" for="Search">Search:</label>
-              <input type="text" id="ingredient" name="ingredient-item">
-               <button type="submit">Go</button>
-           </div>
+            <label class="search-bar" for="Search">Search:</label>
+            <input type="text" id="ingredient" name="ingredient-item" />
+            <button type="submit">Go</button>
+          </div>
         </form>
       </section>
     </header>
-      
+
     <main>
-      <nav class="Favorites">
-        <ul>
-          <li> <a href="">Drinks</a>
-            <img src="source" alt="caption">
+      <nav>
+        <section class="favoritesContainer">
+          <div class="drinks">
+            <a href="">Drinks</a>
+            <img src="source" alt="caption" />
             <figcaption class="text-center">caption</figcaption>
-          </li>
-          <li> <a href="">Snacks</a>
-            <img src="source" alt="caption">
+          </div>
+          <div class="snacks">
+            <a href="">Snacks</a>
+            <img
+              src="https://assets.sweat.com/html_body_blocks/images/000/013/890/original/EasyHealthySnac[…]1435f055d9_en38b28edc7b2830a46f6e00bfeceeb1b6.jpg?1596090039"
+              alt="caption"
+            />
             <figcaption class="text-center">caption</figcaption>
-          </li>
-          <li> <a href="#">Main Dishes</a>
-            <img src="source" alt="caption">
+          </div>
+          <div class="entrees">
+            <a href="#">Main Dishes</a>
+            <img src="source" alt="caption" />
             <figcaption class="text-center">caption</figcaption>
-          </li>
-        </ul>
+          </div>
+        </section>
       </nav>
 
-      <section class="Recipe of the Day"> <a href= "">Recipe of the Day</a>
-        <img src="" alt="">
+      <section class="Recipe of the Day">
+        <a href="">Recipe of the Day</a>
+        <img src="" alt="" />
       </section>
+    </main>
 
-
-   </main>
-
-
-
-    <footer class="footer">
-      Thanks for cooking with us :)
-    </footer>
-
+    <footer class="footer">Thanks for cooking with us :)</footer>
   </body>
 
   <script src="script.js"></script>
-
 </html>
