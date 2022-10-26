@@ -1,14 +1,27 @@
 "use strict";
 const apiToken = c4277b2a11msh036137154db892dp146f21jsna944452c6882;
+let ingredient;
+function getRecipe(ingredient) {
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "c4277b2a11msh036137154db892dp146f21jsna944452c6882",
+      "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+    },
+  };
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "c4277b2a11msh036137154db892dp146f21jsna944452c6882",
-    "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-  },
-};
+  //   const params = {
+  //     query: ingredient,
+  //   };
 
-const params = {
-  query: ingredient,
-};
+  return fetch(
+    `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${pasta}`,
+    options
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      ingredient = data.ingredient;
+    })
+    .catch((err) => console.error(err));
+}
+getRecipe();
