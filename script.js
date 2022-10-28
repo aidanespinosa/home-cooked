@@ -20,11 +20,27 @@ var ingredientData = function (ingredient) {
     `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}`,
     options
   )
-    .then((response) => response.json())
-    .then((results) => {
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (results) {
+      appendResults(results);
       console.log(results);
+    })
+    .catch(function (err) {
+      console.log('error: ' + err);
     });
+  function appendResults(results) {
+  var resultsContainer = document.getElementById("api-results");
+  for (var i = 0; i < results.length; i++) {
+    var div = document.createElement("div");
+    div.innerHTML = results[i].title
+    resultsContainer.appendChild(div);
+  }
+}  
 };
+
+
 
 // .catch((err) => console.error(err));
 
