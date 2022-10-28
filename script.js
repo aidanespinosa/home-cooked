@@ -17,30 +17,28 @@ var ingredientData = function (ingredient) {
     },
   };
   fetch(
-    `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}`,
+    `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}&addRecipeInformation=true`,
     options
   )
     .then(function (response) {
       return response.json();
     })
-    .then(function (results) {
-      appendResults(results);
-      console.log(results);
-    })
-    .catch(function (err) {
-      console.log('error: ' + err);
-    });
-  function appendResults(results) {
-  var resultsContainer = document.getElementById("api-results");
-  for (var i = 0; i < results.length; i++) {
-    var div = document.createElement("div");
-    div.innerHTML = results[i].title
-    resultsContainer.appendChild(div);
-  }
-}  
-};
+    .then( (data) => {
+      console.log(data);
+      var firstObject = data.results[0];      
+      var h4Content = document.querySelector(".data")
+      h4Content.textContent = firstObject.sourceUrl;
+     } ) 
+    }; 
 
 
+
+// for (var i = 0; i < results.length; i++) {
+//         var div = document.createElement("div");
+//         h4Content.textContent= results[i].image
+//      }
+
+// var resultsContainer = document.getElementById("api-results");
 
 // .catch((err) => console.error(err));
 

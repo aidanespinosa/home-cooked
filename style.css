@@ -44,7 +44,7 @@ h3 {
   color: white;
 }
 
-h4 {
+.data {
   margin-top: 20%;
   text-align: center;
   color: black;
@@ -99,6 +99,8 @@ h4 {
   background-repeat: no-repeat;
   background-image: url(https://iamafoodblog.b-cdn.net/wp-content/uploads/2021/02/how-to-cook-steak-1061w.jpg);
 }
+
+
 
 @media screen and (max-width: 480px) {
   .favoritesContainer {
