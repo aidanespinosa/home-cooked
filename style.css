@@ -1,26 +1,68 @@
+* {
+  font-family: monospace;
+}
+
 #search {
   display: flex;
-  color: black;
+  /*color: white;*/
   flex-direction: column;
   align-items: center;
   border: solid black;
-  height: 200px;
+  height: 300px;
   margin-bottom: 20px;
   padding: 20px;
   background-image: url(https://thumbs.dreamstime.com/b/saint-emilion-vineyard-landscape-south-west-france-pomerol-44672142.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.search-bar {
+  font-size: 18px;
+  color: black;
+}
+
+
 .title {
   align-self: center;
+  font-size: 25px;
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
+
 .favoritesContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
+h3 { 
+  font-size: 30px;
+  border-radius: 15px;
+  border-style: double;
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  margin-top: 20%;
+  text-align: center;
+  color: black;
+  width: 400px;
+  height: 100px;
+  border: solid black;
+  box-shadow: -10px 15px 39px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -10px 15px 39px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 15px 39px 4px rgba(0,0,0,0.75);
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
 .drinks {
   width: 400px;
   height: 400px;
   font-size: 30px;
+  text-align: center;
   border: solid black;
   border-radius: 15px;
   margin: 10px;
@@ -33,6 +75,8 @@
 .snacks {
   width: 400px;
   height: 400px;
+  font-size: 30px;
+  text-align: center;
   border: solid black;
   border-radius: 15px;
   margin: 10px;
@@ -41,9 +85,12 @@
   background-repeat: no-repeat;
   background-image: url(https://assets.sweat.com/html_body_blocks/images/000/013/890/original/EasyHealthySnacks_en65ab5213130c9862172ac11435f055d9_en38b28edc7b2830a46f6e00bfeceeb1b6.jpg?1596090039);
 }
+
 .entrees {
   width: 400px;
   height: 400px;
+  font-size: 30px;
+  text-align: center;
   border: solid black;
   border-radius: 15px;
   margin: 10px;
