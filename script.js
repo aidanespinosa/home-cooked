@@ -6,6 +6,7 @@ button.addEventListener("click", function (event) {
   event.preventDefault();
   let ingredient = document.querySelector("#ingredient").value;
   ingredientData(ingredient);
+
 });
 
 var ingredientData = function (ingredient) {
@@ -21,7 +22,16 @@ var ingredientData = function (ingredient) {
     options
   )
     .then((response) => response.json())
-    .then((response) => console.log(response))
+    .then((results) =>{
+        console.log(results)
+        for(let i=0; i<= results.length[10]; i++){
+        const displayRecipe = function(results){
+            let recipe = data.results[i]
+            
+        }
+    } 
+    }
+    
     .catch((err) => console.error(err));
 };
 
