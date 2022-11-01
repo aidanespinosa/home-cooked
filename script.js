@@ -9,17 +9,6 @@ button.addEventListener("click", function (event) {
   ingredientData(ingredient);
 });
 
-// savButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   for (let i = 0; i <= savButton.length; i++) {
-//     if (savButton[i] == savBox[i]) {
-//       let list = document.createElement("li");
-//       list.textContent = firstObject.sourceUrl;
-//     }
-//   }
-//   let url = firstObject.sourceUrl;
-// });
-
 var ingredientData = function (ingredient) {
   const options = {
     method: "GET",
@@ -43,6 +32,16 @@ var ingredientData = function (ingredient) {
       h4Content.textContent = firstObject.sourceUrl;
     });
 };
+
+savButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  for (let i = 0; i <= savButton.length; i++) {
+    if (savButton[i] == list[i]) {
+      let list = document.createElement("li");
+      list[i].textContent = firstObject.sourceUrl;
+    }
+  }
+});
 
 // .catch((err) => console.error(err));
 
