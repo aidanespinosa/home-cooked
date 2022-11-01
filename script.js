@@ -1,12 +1,24 @@
 // var apiURL = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}`;
 
 var button = document.querySelector(".button");
+const savButton = document.querySelector(".savButton");
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
   let ingredient = document.querySelector("#ingredient").value;
   ingredientData(ingredient);
 });
+
+// savButton.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   for (let i = 0; i <= savButton.length; i++) {
+//     if (savButton[i] == savBox[i]) {
+//       let list = document.createElement("li");
+//       list.textContent = firstObject.sourceUrl;
+//     }
+//   }
+//   let url = firstObject.sourceUrl;
+// });
 
 var ingredientData = function (ingredient) {
   const options = {
@@ -23,22 +35,14 @@ var ingredientData = function (ingredient) {
     .then(function (response) {
       return response.json();
     })
-    .then( (data) => {
+    .then((data) => {
       console.log(data);
-      var firstObject = data.results[0];      
-      var h4Content = document.querySelector(".data")
+      var firstObject = data.results[0];
+      var h4Content = document.querySelector(".data");
+      // var contentUrl = firstObject.sourceUrl;
       h4Content.textContent = firstObject.sourceUrl;
-     } ) 
-    }; 
-
-
-
-// for (var i = 0; i < results.length; i++) {
-//         var div = document.createElement("div");
-//         h4Content.textContent= results[i].image
-//      }
-
-// var resultsContainer = document.getElementById("api-results");
+    });
+};
 
 // .catch((err) => console.error(err));
 
