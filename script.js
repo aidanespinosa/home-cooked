@@ -1,7 +1,7 @@
 // var apiURL = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}`;
 
 var button = document.querySelector(".button");
-const savButton = document.querySelector(".savButton");
+// const savButton = document.querySelector(".savButton");
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -33,14 +33,20 @@ var ingredientData = function (ingredient) {
     });
 };
 
+var savButton = document.querySelector(".savB");
+
 savButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  for (let i = 0; i <= savButton.length; i++) {
-    if (savButton[i] == list[i]) {
-      let list = document.createElement("li");
-      list[i].textContent = firstObject.sourceUrl;
-    }
+  if (!event.target.dataset.index) {
+    return;
   }
+  var recipeUrl = document.querySelector(".data").textContent;
+  var index = event.target.dataset.index;
+  var favorites = document.querySelector(".list[data-index='" + index + "']");
+
+  var list = document.createElement("li");
+  list.textContent = recipeUrl;
+  favorites.appendChild(list);
+  localStorage.setItem("recipe", recipeUrl);
 });
 
 // .catch((err) => console.error(err));
