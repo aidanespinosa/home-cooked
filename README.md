@@ -13,7 +13,8 @@ As a home cook, I want to search for recipes using key ingredients I already hav
 *  It is done when I have three separate categories for favoties: snacks, main, and drinks. 
 *  It is done when I have a Youtube video linked to the recipe
 
-
+![Main](./Assets/Readme%201.png)
+![Ingredients](./Assets/Readme%202.png)
 
 
 
