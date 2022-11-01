@@ -1,8 +1,8 @@
 // var apiURL = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=${ingredient}`;
 
 var button = document.querySelector(".button");
-// const savButton = document.querySelector(".savButton");
 
+// const savButton = document.querySelector(".savButton");
 button.addEventListener("click", function (event) {
   event.preventDefault();
   let ingredient = document.querySelector("#ingredient").value;
@@ -48,13 +48,3 @@ savButton.addEventListener("click", function (event) {
   favorites.appendChild(list);
   localStorage.setItem("recipe", recipeUrl);
 });
-
-// .catch((err) => console.error(err));
-
-// ingredientData("shrimp");
-// for(let i=0; i<= results.length[5]; i++){
-//   const displayRecipe = function(results){
-//       let recipe = data.results[i]
-
-//   }
-// }
