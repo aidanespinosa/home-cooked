@@ -5,56 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title> Recipes Based on What I Have </title>
+    <title>Recipes Based on What I Have</title>
   </head>
 
   <body>
     <header>
       <section id="search">
-        <h2 class="">What do I have?</h2>
+        <h2 class="title">What do I have?</h2>
         <form>
           <div>
-              <label class="search-bar" for="Search">Search:</label>
-              <input type="text" id="ingredient" name="ingredient-item">
-               <button type="submit">Go</button>
-           </div>
+            <label class="search-bar" for="Search">Search:</label>
+            <input type="text" id="ingredient" name="ingredient-item" />
+            <button class="button" type="submit">Go</button>
+          </div>
         </form>
+        <div class="data" type="text">Is this what you're looking for?</div>
+        <section class="savB">
+          <button type="button" class="savButton" id="b1" data-index="1">
+            Drinks
+          </button>
+          <button type="button" class="savButton" id="b2" data-index="2">
+            Snacks
+          </button>
+          <button type="button" class="savButton" id="b3" data-index="3">
+            Main
+          </button>
+        </section>
       </section>
     </header>
-      
+
     <main>
-      <nav class="Favorites">
-        <ul>
-          <li> <a href="">Drinks</a>
-            <img src="source" alt="caption">
-            <figcaption class="text-center">caption</figcaption>
-          </li>
-          <li> <a href="">Snacks</a>
-            <img src="source" alt="caption">
-            <figcaption class="text-center">caption</figcaption>
-          </li>
-          <li> <a href="#">Main Dishes</a>
-            <img src="source" alt="caption">
-            <figcaption class="text-center">caption</figcaption>
-          </li>
-        </ul>
+      <nav>
+        <section class="favoritesContainer">
+          <div class="savBox" id="drinks" data-index="1">
+            <h3>Drinks</h3>
+            <ul class="list" data-index="1" id="drinkBox"></ul>
+          </div>
+          <div class="savBox" id="snacks" data-index="2">
+            <h3>Snacks</h3>
+            <ul class="list" data-index="2" id="snackBox"></ul>
+          </div>
+          <div class="savBox" id="entrees" data-index="3">
+            <h3>Main Dishes</h3>
+            <ul class="list" data-index="3" id="mainBox"></ul>
+          </div>
+        </section>
       </nav>
 
-      <section class="Recipe of the Day"> <a href= "">Recipe of the Day</a>
-        <img src="" alt="">
+      <section class="Recipe of the Day">
+        <a href="">Recipe of the Day</a>
+        <img src="" alt="" />
       </section>
+    </main>
 
-
-   </main>
-
-
-
-    <footer class="footer">
-      Thanks for cooking with us :)
-    </footer>
-
+    <footer class="footer">Thanks for cooking with us :)</footer>
   </body>
 
   <script src="script.js"></script>
-
 </html>

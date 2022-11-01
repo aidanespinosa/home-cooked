@@ -1,0 +1,165 @@
+* {
+  font-family: monospace;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black;
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-image: url(https://thumbs.dreamstime.com/b/saint-emilion-vineyard-landscape-south-west-france-pomerol-44672142.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-bar {
+  font-size: 18px;
+  color: black;
+}
+
+.title {
+  align-self: center;
+  font-size: 25px;
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.favoritesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 30px;
+  border-radius: 15px;
+  border-style: double;
+  background-color: black;
+  color: white;
+}
+
+li {
+  font-size: 15px;
+  margin: auto;
+}
+
+.data {
+  margin: 30px;
+  text-align: center;
+  color: black;
+  width: 400px;
+  height: 100px;
+  border: solid black;
+  box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+}
+
+.savButton {
+  border: 1px solid black;
+  float: left;
+}
+
+.savButton:hover {
+  transition-duration: 0.4s;
+  background-color: green;
+  color: white;
+}
+#b1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#b3 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+#drinks {
+  width: 400px;
+  height: 400px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20191031-mojitos-three-ways-delish-ehg-2887-1584029660.jpg?crop=0.540xw:0.810xh;0.232xw,0.0745xh&resize=640:*);
+}
+#drinkBox {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+}
+
+#snacks {
+  width: 400px;
+  height: 400px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-image: url(https://assets.sweat.com/html_body_blocks/images/000/013/890/original/EasyHealthySnacks_en65ab5213130c9862172ac11435f055d9_en38b28edc7b2830a46f6e00bfeceeb1b6.jpg?1596090039);
+}
+#snackBox {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+    box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+}
+
+#entrees {
+  width: 400px;
+  height: 400px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-image: url(https://iamafoodblog.b-cdn.net/wp-content/uploads/2021/02/how-to-cook-steak-1061w.jpg);
+}
+#mainBox {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 15px 39px 4px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 480px) {
+  .favoritesContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
