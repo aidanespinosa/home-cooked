@@ -3,18 +3,18 @@ An intuitive way to find and store food and drink recipes by keyword searches.
 
 ## User Story
 
-As a home cook, I want to search for recipes using key ingredients I already have, so that I can reduce food waste. 
+As a home cook, I want to search for recipes using key ingredients I already have, so that I can reduce food waste.
+
+## Intuitive To Use
+
+Simply enter any ingredient to search bar and hit go! A recipe will be delivered directly to the interface using a third-party API. 
+Click the desired category specified to each button to save each link to your desired sub-category.
+
 
 ### link
 https://aidanespinosa.github.io/home-cooked/
 
-## Acceptance Criteria
 
-*  It is done when I have a search bar to search for an ingredient.
-*  It is done when the searched keyword brings up 10 different recipes. 
-*  It is done when I can save that recipe and have it added to favorites. 
-*  It is done when I have three separate categories for favoties: snacks, main, and drinks. 
-*  It is done when I have a Youtube video linked to the recipe
 
 
 
